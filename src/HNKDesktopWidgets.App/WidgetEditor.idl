@@ -1,0 +1,6 @@
+namespace HNKDesktopWidgets {
+	[default_interface]
+	runtimeclass WidgetEditor : Microsoft.UI.Xaml.Controls.Page {
+		WidgetEditor();
+	}
+}

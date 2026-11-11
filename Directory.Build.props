@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <HNKDesktopWidgetsRoot>$(MSBuildThisFileDirectory)</HNKDesktopWidgetsRoot>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <UseDebugLibraries Condition="'$(Configuration)'=='Debug'">true</UseDebugLibraries>
+    <UseDebugLibraries Condition="'$(Configuration)'!='Debug'">false</UseDebugLibraries>
+    <!-- Output directory is $(HNKDesktopWidgetsRoot)build\, which is
+         D:\Repository\HNKWallPaper\HNKDesktopWidgets\build\ in this tree.
+         Set before the VC toolset so OutDirWasSpecified stays true. -->
+    <OutDir>$(HNKDesktopWidgetsRoot)build\</OutDir>
+    <IntDir>$(HNKDesktopWidgetsRoot)build\obj\$(MSBuildProjectName)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <Optimization Condition="'$(Configuration)'=='Debug'">Disabled</Optimization>
+      <Optimization Condition="'$(Configuration)'!='Debug'">MaxSpeed</Optimization>
+      <FunctionLevelLinking Condition="'$(Configuration)'!='Debug'">true</FunctionLevelLinking>
+      <IntrinsicFunctions Condition="'$(Configuration)'!='Debug'">true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding Condition="'$(Configuration)'!='Debug'">true</EnableCOMDATFolding>
+      <OptimizeReferences Condition="'$(Configuration)'!='Debug'">true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+</Project>

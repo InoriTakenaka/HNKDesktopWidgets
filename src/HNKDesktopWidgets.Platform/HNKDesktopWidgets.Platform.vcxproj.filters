@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="DesktopIntegration.h" />
+    <ClInclude Include="InputManager.h" />
+    <ClInclude Include="MonitorManager.h" />
+    <ClInclude Include="SystemBackdrop.h" />
+    <ClInclude Include="Win32Window.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DesktopIntegration.cpp" />
+    <ClCompile Include="InputManager.cpp" />
+    <ClCompile Include="MonitorManager.cpp" />
+    <ClCompile Include="SystemBackdrop.cpp" />
+    <ClCompile Include="Win32Window.cpp" />
+  </ItemGroup>
+</Project>

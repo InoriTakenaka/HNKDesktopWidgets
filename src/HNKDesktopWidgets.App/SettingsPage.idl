@@ -1,0 +1,6 @@
+namespace HNKDesktopWidgets {
+	[default_interface]
+	runtimeclass SettingsPage : Microsoft.UI.Xaml.Controls.Page {
+		SettingsPage();
+	}
+}

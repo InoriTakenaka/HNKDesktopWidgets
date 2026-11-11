@@ -1,0 +1,48 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.0.12224.181
+MinimumVisualStudioVersion = 17.0.31903.59
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HNKDesktopWidgets.App", "src\HNKDesktopWidgets.App\HNKDesktopWidgets.App.vcxproj", "{6F0A0B1C-2D3E-4F50-A617-28394A5B6C7D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HNKDesktopWidgets.Core", "src\HNKDesktopWidgets.Core\HNKDesktopWidgets.Core.vcxproj", "{1A2B3C4D-5E6F-4708-91A2-B3C4D5E6F708}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HNKDesktopWidgets.Platform", "src\HNKDesktopWidgets.Platform\HNKDesktopWidgets.Platform.vcxproj", "{2B3C4D5E-6F70-4819-A2B3-C4D5E6F70819}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HNKDesktopWidgets.Rendering", "src\HNKDesktopWidgets.Rendering\HNKDesktopWidgets.Rendering.vcxproj", "{3C4D5E6F-7081-492A-B3C4-D5E6F708192A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HNKDesktopWidgets.Widgets", "src\HNKDesktopWidgets.Widgets\HNKDesktopWidgets.Widgets.vcxproj", "{4D5E6F70-8192-4A3B-C4D5-E6F708192A3B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F0A0B1C-2D3E-4F50-A617-28394A5B6C7D}.Debug|x64.ActiveCfg = Debug|x64
+		{6F0A0B1C-2D3E-4F50-A617-28394A5B6C7D}.Debug|x64.Build.0 = Debug|x64
+		{6F0A0B1C-2D3E-4F50-A617-28394A5B6C7D}.Release|x64.ActiveCfg = Release|x64
+		{6F0A0B1C-2D3E-4F50-A617-28394A5B6C7D}.Release|x64.Build.0 = Release|x64
+		{1A2B3C4D-5E6F-4708-91A2-B3C4D5E6F708}.Debug|x64.ActiveCfg = Debug|x64
+		{1A2B3C4D-5E6F-4708-91A2-B3C4D5E6F708}.Debug|x64.Build.0 = Debug|x64
+		{1A2B3C4D-5E6F-4708-91A2-B3C4D5E6F708}.Release|x64.ActiveCfg = Release|x64
+		{1A2B3C4D-5E6F-4708-91A2-B3C4D5E6F708}.Release|x64.Build.0 = Release|x64
+		{2B3C4D5E-6F70-4819-A2B3-C4D5E6F70819}.Debug|x64.ActiveCfg = Debug|x64
+		{2B3C4D5E-6F70-4819-A2B3-C4D5E6F70819}.Debug|x64.Build.0 = Debug|x64
+		{2B3C4D5E-6F70-4819-A2B3-C4D5E6F70819}.Release|x64.ActiveCfg = Release|x64
+		{2B3C4D5E-6F70-4819-A2B3-C4D5E6F70819}.Release|x64.Build.0 = Release|x64
+		{3C4D5E6F-7081-492A-B3C4-D5E6F708192A}.Debug|x64.ActiveCfg = Debug|x64
+		{3C4D5E6F-7081-492A-B3C4-D5E6F708192A}.Debug|x64.Build.0 = Debug|x64
+		{3C4D5E6F-7081-492A-B3C4-D5E6F708192A}.Release|x64.ActiveCfg = Release|x64
+		{3C4D5E6F-7081-492A-B3C4-D5E6F708192A}.Release|x64.Build.0 = Release|x64
+		{4D5E6F70-8192-4A3B-C4D5-E6F708192A3B}.Debug|x64.ActiveCfg = Debug|x64
+		{4D5E6F70-8192-4A3B-C4D5-E6F708192A3B}.Debug|x64.Build.0 = Debug|x64
+		{4D5E6F70-8192-4A3B-C4D5-E6F708192A3B}.Release|x64.ActiveCfg = Release|x64
+		{4D5E6F70-8192-4A3B-C4D5-E6F708192A3B}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E7A1C4D2-8B55-4F1E-9C33-0A6B7D8E9F10}
+	EndGlobalSection
+EndGlobal
