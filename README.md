@@ -43,6 +43,8 @@ The Visual Studio "Windows App SDK C++ Templates" component is not installed. Th
 
 `HNKDesktopWidgets.App` is the WinUI 3 management shell. It registers the built-in widgets and starts the native host. WinUI does not draw the desktop widget.
 
+`HNKDesktopWidgets.Tests` is a console executable that checks registration, configuration, and invalidation without creating a window.
+
 ## Directory structure
 
 ```text
@@ -57,6 +59,8 @@ HNKDesktopWidgets/
 │   ├── HNKDesktopWidgets.Platform/
 │   ├── HNKDesktopWidgets.Rendering/
 │   └── HNKDesktopWidgets.Widgets/
+├── tests/
+│   └── HNKDesktopWidgets.Tests.vcxproj
 ├── resources/
 └── plugins/
 ```
@@ -88,11 +92,13 @@ Build output goes to `build\` under this directory (`D:\Repository\HNKWallPaper\
 .\build\HNKDesktopWidgets.exe
 ```
 
+The test executable is `.\build\HNKDesktopWidgets.Tests.exe`.
+
 While the app is running it writes `hnkdesktopwidgets-verify.log` beside the executable. The log records the widget HWND, graphics initialization, redraw count, and the current clock text.
 
 ## Project dependencies
 
-`HNKDesktopWidgets.App` references the static libraries and links them.
+`HNKDesktopWidgets.App` and `HNKDesktopWidgets.Tests` reference the static libraries and link them.
 
 - `HNKDesktopWidgets.Core` uses `HNKDesktopWidgets.Platform` and `HNKDesktopWidgets.Rendering`.
 - `HNKDesktopWidgets.Widgets` uses `HNKDesktopWidgets.Core` and `HNKDesktopWidgets.Rendering`.
